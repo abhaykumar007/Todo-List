@@ -5,7 +5,6 @@ const initial = {
 const reducerFun = (state = initial, action) => {
   switch (action.type) {
     case ADD: {
-      // console.log("reducer", action.payload);
       return { todo: [...state.todo, action.payload] };
     }
     case DELETE: {

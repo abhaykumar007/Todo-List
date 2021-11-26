@@ -2,13 +2,13 @@
   height: 100vh;
   width: 100vw;
   margin: 0;
-  padding-top: 7vh;
   background-color: #fecbac;
   overflow: hidden;
 }
 
 /* ============ Container =============== */
 .container {
+  margin-top: 8vh;
   padding-top: 5vh;
   width: 35vw;
   height: 75vh;
@@ -51,22 +51,35 @@
   height: 50vh;
   overflow: auto;
 }
+.todo-container .edit {
+  display: flex;
+  justify-content: space-around;
+}
+.todo-container .edit button {
+  color: rgb(61, 59, 59);
+  border: none;
+  font-size: 15px;
+  background: transparent;
+}
 .todo-container .todo-ol {
   display: flex;
   margin: 0;
   padding: 0;
+  justify-content: space-evenly;
 }
 .todo-container .todo-ol button {
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: 80px;
-  font-family: Arial;
-  color: #ff0000;
   font-size: 20px;
+  color: rgb(61, 59, 59);
   background: transparent;
+  cursor: pointer;
   border: none;
 }
 
-.todo-container .todo-ol h2 {
-  margin-left: 80px;
+.todo-container .todo-ol input {
+  color: #343981;
+  border: none;
+  cursor: pointer;
+}
+.todo-container .todo-ol input::placeholder {
+  color: #343981;
 }
